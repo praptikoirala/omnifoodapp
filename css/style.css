@@ -241,35 +241,80 @@ h1 {
   background: #F4F4F4;
 }
 
+#working .center {
+  margin-bottom: 2rem;
+}
+
 #working .contents {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr;
-      grid-template-columns: 1fr 4fr;
-}
-
-#working .contents .content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 2fr 2fr 5fr;
+      grid-template-columns: 2fr 2fr 5fr;
   grid-gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#working .contents .content .img-container {
-  height: 100%;
-}
-
-#working .contents .content .infos .info1 {
+#working .contents .img-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
-#working .contents .content .infos .info1 .number {
+#working .contents .infos {
+  font-display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+#working .contents .infos .info-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+#working .contents .infos .info-1 .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 3.5rem;
   width: 4rem;
-  border: 1px solid #007BFF;
+  padding: 1rem;
+  color: #007BFF;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-right: 1rem;
   border-radius: 50%;
-  text-align: center;
+  border: 2px solid #007BFF;
+}
+
+#working .contents .infos .info-2 .img-container img {
+  margin-top: 1rem;
+  width: 25%;
+}
+
+#working .contents .infos .info-2 .img-container .img-edit {
+  width: 33%;
+  margin-left: 2rem;
+  border-radius: 5px;
 }

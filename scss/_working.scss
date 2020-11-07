@@ -3,30 +3,63 @@
 #working{
     background: $bg-color;
 
+    .center{
+        margin-bottom: 2rem;
+    }
+
     .contents{
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 2fr 2fr 5fr;
+        grid-gap:3rem;
+        align-items: center;
 
-        .content{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-gap:3rem;
+        .img-container{
+            display: flex;
+            align-items: center;
+            height:100%;
+        }
 
-            .img-container{
-                height:100%;
+        .infos{
+            font-display: flex;
+            flex-direction: column;
+            padding:1rem;
+
+            .info-1{
+                display: flex;
+                align-items: center;
+                font-size:1.2rem;
+                font-weight:300;
+                margin-bottom: 2rem;
+
+                .number{
+                    display: flex;
+                    justify-content:center ;
+                    align-items:center;
+                    height:3.5rem;
+                    width:4rem;
+                    padding:1rem;
+                    color:$main-color;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    margin-right: 1rem;
+                    border-radius:50%;
+                    border:2px solid $main-color;
+                }
             }
 
-            .infos{
+            .info-2{
 
-                .info1{
-                    display:flex;
+                .img-container{
+        
+                    img{
+                        margin-top: 1rem;
+                        width:25%;
+                    }
 
-                    .number{
-                        height:3.5rem;
-                        width:4rem;
-                        border:1px solid $main-color;
-                        border-radius:50%;
-                        text-align: center;
+                    .img-edit{
+                        width:33%;
+                        margin-left: 2rem;
+                        border-radius:5px;
                     }
                 }
             }

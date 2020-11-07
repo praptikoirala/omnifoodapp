@@ -4,7 +4,7 @@
     background: $bg-color;
 
     .center{
-        margin-bottom: 2rem;
+        margin-bottom:2rem;
     }
 
     .contents{
@@ -50,6 +50,9 @@
             .info-2{
 
                 .img-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
         
                     img{
                         margin-top: 1rem;
@@ -58,7 +61,7 @@
 
                     .img-edit{
                         width:33%;
-                        margin-left: 2rem;
+                        margin-left: 1.5rem;
                         border-radius:5px;
                     }
                 }

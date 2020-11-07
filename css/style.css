@@ -63,8 +63,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 1rem 2rem;
-  margin-bottom: 3rem;
+  padding: 0.5rem 2rem;
 }
 
 .center h1 {
@@ -127,13 +126,31 @@ h1 {
 }
 
 #home-header nav .menu-items a {
+  position: relative;
   color: #ffffff;
   font-size: 1.2rem;
   padding-bottom: 0.1rem;
 }
 
-#home-header nav .menu-items a:hover {
-  border-bottom: 2px solid blue;
+#home-header nav .menu-items a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1px;
+  height: 3px;
+  width: 100%;
+  background-color: #007BFF;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+#home-header nav .menu-items a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 #home-header .head-content {
@@ -182,6 +199,10 @@ h1 {
 #features {
   background: #F4F4F4;
   padding-bottom: 0.5rem;
+}
+
+#features .center {
+  margin-bottom: 1rem;
 }
 
 #features .feature-content {
@@ -308,6 +329,18 @@ h1 {
   border: 2px solid #007BFF;
 }
 
+#working .contents .infos .info-2 .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #working .contents .infos .info-2 .img-container img {
   margin-top: 1rem;
   width: 25%;
@@ -315,6 +348,37 @@ h1 {
 
 #working .contents .infos .info-2 .img-container .img-edit {
   width: 33%;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   border-radius: 5px;
+}
+
+#cities .cities-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+#cities .cities-info h2 {
+  font-weight: 300;
+  font-size: 1.65rem;
+}
+
+#cities .cities-info ul li {
+  padding: 0.25rem;
+  font-size: 1.2rem;
+}
+
+#cities .cities-info ul li i {
+  margin-right: 0.75rem;
+  color: #007BFF;
+}
+
+#cities .cities-info ul li a {
+  color: #007BFF;
+}
+
+#cities .cities-info ul li a:hover {
+  text-decoration: underline;
 }

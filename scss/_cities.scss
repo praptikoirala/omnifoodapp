@@ -1,0 +1,36 @@
+@import 'variables';
+
+#cities{
+
+    .cities-info{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-gap:2rem;
+
+        h2{
+            font-weight:300;
+            font-size: 1.65rem;
+        }
+
+        ul{
+
+            li{
+                padding:0.25rem;
+                font-size: 1.2rem;
+
+                & i{
+                    margin-right:0.75rem;
+                    color:$main-color;
+                }
+
+                & a{
+                    color:$main-color;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

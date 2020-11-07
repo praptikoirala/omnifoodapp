@@ -1,0 +1,20 @@
+@import 'variables';
+
+#images{
+
+    .img-boxes{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-gap:1.5rem;
+
+        .img-container{
+            border-radius: 3px;
+            overflow: hidden;
+
+            &:hover img{
+                transform: scale(1.2);
+                transition:transform 0.5s ease-in-out;
+            }
+        }
+    }
+}

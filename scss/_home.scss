@@ -1,0 +1,86 @@
+@import 'variables';
+
+#home-header{
+    position: relative;
+    height:100vh;
+    background: url('/images/head-bg.jpg')no-repeat center center/cover;
+
+    nav{
+        position: relative;
+        color:$light-color;
+        padding:0.8rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index:5;
+
+        .img-container{
+            height:9.5%;
+            width:9.5%;
+        }
+
+        .menu-items{
+            display: flex;
+            padding:0.5rem;
+
+            li{
+                padding:0rem 1.5rem;
+            }
+
+            a{
+                color:$light-color;
+                font-size: 1.2rem;
+                padding-bottom: 0.1rem;
+
+                &:hover{
+                    border-bottom:2px solid blue;
+                }
+            }
+        }
+    }
+
+    .head-content{
+        position: relative; 
+        z-index: 5;
+        color:$light-color;
+        padding:6rem 0rem 0rem 2rem;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn{
+            @extend %btnshared;
+            font-size: 1.1rem;
+            padding:0.4rem 1.4rem;
+            transition: all 0.2s ease-in-out;
+            
+            &.btn-color{
+                background: $main-color;
+                border:none;
+                margin-right: 1rem;
+
+                &:hover{
+                    background: rgba($color:$dark-color, $alpha:0.95);
+                }
+            }
+
+            &.button{
+                &:hover{
+                    background: $main-color;
+                }
+            }
+        }
+    }
+}
+
+#home-header::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba($color: #000000, $alpha:0.7);
+}

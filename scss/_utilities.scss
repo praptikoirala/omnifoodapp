@@ -1,0 +1,79 @@
+@import 'variables';
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.7;
+    font-weight: 350;
+}
+
+.container{
+    max-width: 1200px;
+    padding:1rem 2.5rem;
+    margin:auto;
+    overflow: hidden;
+}
+
+.py-1{padding:1.5rem 0;}
+.py-2{padding:2.5rem 0;}
+.py-3{padding:3.5rem 0;}
+
+.img-container{
+
+    img{
+        height:100%;
+        width:100%;
+    }
+}
+
+ul li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+%btnshared{
+    display: inline-block;
+    margin-top:1rem;
+    color:$light-color;
+    border:1px solid $main-color;
+    border-radius: 3px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:1rem 2rem;
+    margin-bottom:3rem;
+
+    h1{
+        font-size: 2.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .btm-line{
+        height:2px;
+        width:10rem;
+        margin-bottom: 2rem;
+        background: $main-color;
+    }
+
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+h1{
+    font-weight: 300;
+}
+

@@ -1,0 +1,34 @@
+@import 'variables';
+
+#features{
+    background: $bg-color;
+    padding-bottom:0.5rem;
+
+    .feature-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:1.5rem;
+        padding:1rem;
+
+        .box{
+            padding:1rem;
+            
+            svg{
+                width:20%;
+                fill: $main-color;
+                transform: scale(1.8);
+                margin-bottom: 1.5rem;
+            }
+
+            h2{
+                font-weight:400;
+                margin-bottom: 0.75rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+                font-weight:300;
+            }
+        }
+    }
+}

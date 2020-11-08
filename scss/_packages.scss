@@ -1,0 +1,78 @@
+@import 'variables';
+
+#packages{
+    background:$bg-color;
+
+    .package-box{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-gap:3rem;
+        padding:1rem;
+        //border:1px solid red;
+
+        .box{
+
+            .box-up{
+                background:#ffff;
+                padding:1rem;
+
+                h2{
+                    font-weight: 300;
+                    font-size: 1.6rem;
+                }
+
+                p{
+
+                    &.color-p{
+                        color:$main-color;
+                        font-size: 1.5rem;
+                    }
+
+                    .large{
+                        font-weight: 300;
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            .box-down{
+                background: #ffffff;
+                margin-top:0.2rem;
+                padding:1rem;
+
+                ul{
+
+                    li{
+                        padding:0.5rem;
+                        font-size: 1.1rem;
+                        font-weight: 400;
+
+                        i{
+                            color:$main-color;
+                            margin-right:0.75rem;
+                        }
+                    }
+                }
+            }
+
+            .box-button{
+                background: #ffffff;
+                margin-top:0.2rem;
+                padding: 1rem 0rem;
+                text-align: center;
+
+                .btn{
+                    background: $main-color;
+                    margin: 1rem 0rem;
+
+                    &:hover{
+                        background: rgba($color: #000000, $alpha:0.8);
+                        border:none;
+                        box-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -47,6 +47,13 @@ a{
     border-radius: 3px;
 }
 
+.btn{
+    @extend %btnshared;
+    font-size: 1.1rem;
+    padding:0.4rem 1.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
 .center{
     display: flex;
     flex-direction: column;

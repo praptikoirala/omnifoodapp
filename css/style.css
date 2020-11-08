@@ -43,12 +43,19 @@ a {
   text-decoration: none;
 }
 
-#home-header .head-content .btn {
+.btn {
   display: inline-block;
   margin-top: 1rem;
   color: #ffffff;
   border: 1px solid #007BFF;
   border-radius: 3px;
+}
+
+.btn {
+  font-size: 1.1rem;
+  padding: 0.4rem 1.4rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .center {
@@ -173,13 +180,6 @@ h1 {
 #home-header .head-content h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-}
-
-#home-header .head-content .btn {
-  font-size: 1.1rem;
-  padding: 0.4rem 1.4rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 #home-header .head-content .btn.btn-color {
@@ -457,4 +457,73 @@ h1 {
   font-size: 1.1rem;
   font-weight: 400;
   margin-left: 1rem;
+}
+
+#packages {
+  background: #F4F4F4;
+}
+
+#packages .package-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  padding: 1rem;
+}
+
+#packages .package-box .box .box-up {
+  background: #ffff;
+  padding: 1rem;
+}
+
+#packages .package-box .box .box-up h2 {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+#packages .package-box .box .box-up p.color-p {
+  color: #007BFF;
+  font-size: 1.5rem;
+}
+
+#packages .package-box .box .box-up p .large {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+#packages .package-box .box .box-down {
+  background: #ffffff;
+  margin-top: 0.2rem;
+  padding: 1rem;
+}
+
+#packages .package-box .box .box-down ul li {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#packages .package-box .box .box-down ul li i {
+  color: #007BFF;
+  margin-right: 0.75rem;
+}
+
+#packages .package-box .box .box-button {
+  background: #ffffff;
+  margin-top: 0.2rem;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+#packages .package-box .box .box-button .btn {
+  background: #007BFF;
+  margin: 1rem 0rem;
+}
+
+#packages .package-box .box .box-button .btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 }

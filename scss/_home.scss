@@ -5,6 +5,16 @@
     height:100vh;
     background: url('/images/head-bg.jpg')no-repeat center center/cover;
 
+    &::before{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        background:rgba($color: #000000, $alpha:0.7);
+    }
+
     nav{
         position: relative;
         color:$light-color;
@@ -86,14 +96,4 @@
             }
         }
     }
-}
-
-#home-header::before{
-    content:'';
-    position: absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background:rgba($color: #000000, $alpha:0.7);
 }

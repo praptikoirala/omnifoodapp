@@ -523,7 +523,122 @@ h1 {
 
 #packages .package-box .box .box-button .btn:hover {
   background: rgba(0, 0, 0, 0.8);
-  border: none;
+  border-color: #333333;
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+#sign-in .login {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr 1fr;
+      grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+#sign-in .login .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sign-in .login .form label {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#sign-in .login .form input {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  border: 1px solid #333333;
+  border-radius: 2px;
+}
+
+#sign-in .login .form select {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  border: 1px solid #333333;
+  border-radius: 2px;
+}
+
+#sign-in .login .form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+#sign-in .login .form .btn {
+  background: #007BFF;
+  border: 1px solid #007BFF;
+  width: 35%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#sign-in .login .form .btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: #333333;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+#foot {
+  background: #333333;
+}
+
+#foot .upper-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#foot .upper-foot .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#foot .upper-foot .items li {
+  padding: 1rem;
+}
+
+#foot .upper-foot .items li a {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+#foot .upper-foot .items li a:hover {
+  color: #007BFF;
+}
+
+#foot .upper-foot .social i {
+  color: #007BFF;
+  padding: 0.75rem;
+  font-size: larger;
+}
+
+#foot .lower-foot {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+#foot .lower-foot p {
+  font-size: 1.2rem;
+  font-weight: 200;
 }

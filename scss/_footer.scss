@@ -1,0 +1,47 @@
+#foot{
+    background: $dark-color;
+
+    .upper-foot{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+
+        .items{
+            display: flex;
+
+            li{
+                padding:1rem;
+
+                a{
+                    font-size: 1.2rem;
+                    font-weight:200;
+                    color:$light-color;
+                    
+                    &:hover{
+                        color:$main-color;
+                    }
+                }
+            }
+        }
+
+        .social{
+
+            i{
+                color:$main-color;
+                padding:0.75rem;
+                font-size:larger;
+            }
+        }
+    }
+
+    .lower-foot{
+        margin-top:1.5rem;
+        text-align: center;
+        color:$light-color;
+
+        p{
+            font-size:1.2rem;
+            font-weight:200;
+        }
+    }
+}

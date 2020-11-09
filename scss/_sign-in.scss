@@ -1,0 +1,56 @@
+@import 'variables';
+
+#sign-in{
+
+    .login{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+
+        .form{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+            input{
+                padding:0.5rem;
+                width:100%;
+                margin-bottom: 0.75rem;
+                border:1px solid $dark-color;
+                border-radius:2px;
+            }
+
+            select{
+                padding:0.5rem;
+                width:100%;
+                margin-bottom:0.75rem ;
+                border:1px solid $dark-color;
+                border-radius:2px;
+            }
+
+            textarea{
+                width:100%;
+                padding:0.5rem;
+                border:1px solid $dark-color;
+                border-radius:2px;
+                margin-bottom: 1rem;
+            }
+
+            .btn{
+                background: $main-color;
+                border:1px solid $main-color;
+                width:35%;
+                align-self: center;
+
+                &:hover{
+                    background:rgba($color:#000000, $alpha: 0.8);
+                    border-color: $dark-color;
+                    box-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+                }
+            }
+        }
+    }
+}

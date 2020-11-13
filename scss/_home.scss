@@ -22,7 +22,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index:5;
+        z-index:3;
 
         .img-container{
             height:9.5%;
@@ -33,30 +33,30 @@
             display: flex;
             padding:0.5rem;
 
-            li{
+            .menu-item{
                 padding:0rem 1.5rem;
-            }
 
-            a{
-                position: relative;
-                color:$light-color;
-                font-size: 1.2rem;
-                padding-bottom: 0.1rem;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    left:0;
-                    bottom:0.1px;
-                    height: 3px;
-                    width: 100%;
-                    background-color: $main-color;
-                    transform: scaleX(0);
-                    transition: transform 0.2s ease-in;
-                }
-
-                &:hover::after {
-                    transform: scaleX(1);
+                a{
+                    position: relative;
+                    color:$light-color;
+                    font-size: 1.2rem;
+                    padding-bottom: 0.1rem;
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left:0;
+                        bottom:0.1px;
+                        height: 3px;
+                        width: 100%;
+                        background-color: $main-color;
+                        transform: scaleX(0);
+                        transition: transform 0.2s ease-in;
+                    }
+    
+                    &:hover::after {
+                        transform: scaleX(1);
+                    }
                 }
             }
         }

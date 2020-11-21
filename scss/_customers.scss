@@ -152,3 +152,15 @@
         }
     }   
 }
+
+@media(max-width:550px){
+    #customers{
+        height:210vh;
+    }
+}
+
+@media(max-width:400px){
+    #customers{
+        height:220vh;
+    }
+}

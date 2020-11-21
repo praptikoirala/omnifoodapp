@@ -241,7 +241,7 @@ h1 {
     width: 10%;
   }
   #home-header .head-content {
-    padding-top: 6.5rem;
+    padding: 6.5rem 0 0 2rem;
   }
   #home-header .head-content h1 {
     font-size: 2.5rem;
@@ -255,7 +255,7 @@ h1 {
     width: 15%;
   }
   #home-header .head-content {
-    padding-top: 5.8rem;
+    padding: 5.8rem 0 0 2rem;
   }
   #home-header .head-content h1 {
     font-size: 2.3rem;
@@ -268,7 +268,7 @@ h1 {
     width: 17%;
   }
   #home-header .head-content {
-    padding-top: 6.25rem;
+    padding: 6.25rem 0 0 2rem;
   }
   #home-header .head-content h1 {
     font-size: 2rem;
@@ -288,7 +288,7 @@ h1 {
     width: 23%;
   }
   #home-header .head-content {
-    padding-right: 0.75rem;
+    padding: 6.25rem 1.5rem 0 2rem;
   }
   #home-header .head-content h1 {
     font-size: 1.8rem;
@@ -300,8 +300,24 @@ h1 {
     height: 25%;
     width: 25%;
   }
+  #home-header .head-content {
+    padding: 6.5rem 1rem 0 2rem;
+  }
   #home-header .head-content h1 {
     font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #home-header nav .img-container {
+    height: 28%;
+    width: 28%;
+  }
+  #home-header .head-content {
+    padding: 6.5rem 1rem 0rem 1.5rem;
+  }
+  #home-header .head-content h1 {
+    font-size: 1.4rem;
   }
 }
 
@@ -863,6 +879,18 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  #customers {
+    height: 210vh;
+  }
+}
+
+@media (max-width: 400px) {
+  #customers {
+    height: 220vh;
   }
 }
 

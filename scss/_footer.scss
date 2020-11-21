@@ -1,3 +1,5 @@
+@import 'variables';
+
 #foot{
     background: $dark-color;
 
@@ -42,6 +44,35 @@
         p{
             font-size:1.2rem;
             font-weight:200;
+        }
+    }
+}
+
+@media(max-width:800px){
+    #foot{
+    
+        .upper-foot{
+    
+            .items{
+                flex-direction: column;
+                margin-left:1.5rem;
+    
+                li{
+                    padding:0.5rem;
+    
+                    a{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    
+        .lower-foot{
+            margin-top:2rem;
+
+            p{
+                font-size:1.1rem;
+            }
         }
     }
 }

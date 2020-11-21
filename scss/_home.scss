@@ -18,7 +18,7 @@
     nav{
         position: relative;
         color:$light-color;
-        padding:0.8rem 2rem;
+        padding:1rem 2.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -89,6 +89,125 @@
                 &:hover{
                     background: $main-color;
                 }
+            }
+        }
+    }
+}
+
+
+@media(max-width:1075px){
+    #home-header{
+
+        nav{
+
+            .img-container{
+                height:10%;
+                width:10%;
+            }
+        }
+
+        .head-content{
+            padding-top:6.5rem;
+    
+            h1{
+                font-size:2.5rem;
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+}
+
+@media(max-width:875px){
+    #home-header{
+
+        nav{
+
+            .img-container{
+                height:15%;
+                width:15%;
+            }
+        }
+
+        .head-content{
+            padding-top:5.8rem;
+            
+            h1{
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
+
+@media(max-width:750px){
+    #home-header{
+
+        nav{
+
+            .img-container{
+                height:17%;
+                width:17%;
+            }
+        }
+
+        .head-content{
+            padding-top:6.25rem;
+            
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:675px){
+    #home-header{
+
+        nav{
+
+            .img-container{
+                height:18.5%;
+                width:18.5%;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    #home-header{
+
+        nav{
+
+            .img-container{
+                height:23%;
+                width:23%;
+            }
+        }
+
+        .head-content{
+            padding-right:0.75rem;
+            
+            h1{
+              font-size:1.8rem;
+            }
+        }
+    }
+}
+
+@media(max-width:550px){
+    #home-header{
+
+        nav{
+
+            .img-container{
+                height:25%;
+                width:25%;
+            }
+        }
+
+        .head-content{
+            
+            h1{
+              font-size:1.65rem;
             }
         }
     }

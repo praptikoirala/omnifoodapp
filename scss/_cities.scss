@@ -2,6 +2,10 @@
 
 #cities{
 
+    .center{
+        margin-bottom:1.5rem;
+    }
+
     .cities-info{
         display:grid;
         grid-template-columns:repeat(3,1fr);
@@ -31,6 +35,38 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media(max-width:875px){
+    #cities{
+
+        .cities-info{
+            grid-template-columns:repeat(2,1fr);
+    
+            h2{
+                font-weight:300;
+                font-size: 1.5rem;
+            }
+    
+            ul{
+    
+                li{
+                    padding:0.2rem;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:575px){
+    #cities{
+
+        .cities-info{
+            grid-template-columns:repeat(1,1fr);
+            text-align: center;
         }
     }
 }

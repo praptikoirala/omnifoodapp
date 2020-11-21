@@ -6,13 +6,14 @@
     display: none;
 
     .line{
-        height:2px;
+        height:0.2rem;
         width:2rem;
-        background: $light-color;
+        border-radius: 5px;
+        background: $main-color;
         transition:transform 0.1s ease-in-out;
 
         &:not(.l-3){
-            margin-bottom: 0.5rem;
+            margin-bottom:0.2rem;
         }
     }
 
@@ -40,7 +41,7 @@
     }
 }
 
-@media(max-width:975px){
+@media(max-width:1075px){
 
     #home-header{
 
@@ -85,5 +86,41 @@
 
     .smenu-lines{
         display: block;
+    }
+}
+
+@media(max-width:750px){
+    #home-header{
+
+        nav{
+
+            .menu-items{      
+                width:45%;
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    #home-header{
+
+        nav{
+
+            .menu-items{      
+                width:55%;
+            }
+        }
+    }
+}
+
+@media(max-width:550px){
+    #home-header{
+
+        nav{
+
+            .menu-items{      
+                width:65%;
+            }
+        }
     }
 }

@@ -3,6 +3,10 @@
 #packages{
     background:$bg-color;
 
+    .center{
+        margin-bottom:1.5rem;
+    }
+
     .package-box{
         display: grid;
         grid-template-columns:repeat(3,1fr);
@@ -69,6 +73,107 @@
                         background:rgba($color: #000000, $alpha:0.8);
                         border-color: $dark-color;
                         box-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1075px){
+    #packages{
+        display: flex;
+        justify-content: center;
+
+        .package-box{
+            grid-template-columns:repeat(2,1fr);
+        }
+    }
+}
+
+@media(max-width:875px){
+    #packages{
+
+        .package-box{
+    
+            .box{
+    
+                .box-up{
+    
+                    h2{
+                        font-size: 1.3rem;
+                    }
+    
+                    p{
+    
+                        &.color-p{
+                            font-size: 1.3rem;
+                        }
+    
+                        .large{
+                            font-size:2rem;
+                        }
+                    }
+                }
+    
+                .box-down{
+    
+                    ul{
+    
+                        li{
+                            padding:0.25rem;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    #packages{
+
+        .center{
+            margin-bottom:0.1rem;
+        }
+    
+        .package-box{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-gap:0rem;
+            
+            .box{
+                padding:2.5rem;
+    
+                .box-up{
+                    text-align: center;
+    
+                    h2{
+                       font-size: 1.1rem;
+                    }
+    
+                    p{
+    
+                        &.color-p{
+                            font-size: 1.1rem;
+                        }
+    
+                        .large{
+                            font-size:1.5rem;
+                        }
+                    }
+                }
+
+                .box-down{
+    
+                    ul{
+    
+                        li{
+                            padding:0.5rem;
+                        }
                     }
                 }
             }

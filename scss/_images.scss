@@ -18,3 +18,49 @@
         }
     }
 }
+
+@media(max-width:1075px){
+    #images{
+
+        .img-boxes{
+            grid-template-columns:repeat(2,1fr);
+            grid-gap:2rem;
+            margin-left:2.5rem;
+
+            .img-container{
+                width:90%;
+            }
+        }
+    }
+}
+
+@media(max-width:875px){
+    #images{
+
+        .img-boxes{
+            grid-template-columns:repeat(2,1fr);
+            grid-gap:1.5rem;
+            margin-left:0.5rem;
+
+            .img-container{
+                width:100%;
+            }
+        }
+    }
+}
+
+@media(max-width:575px){
+    #images{
+
+        .img-boxes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .img-container{
+                width:90%;
+            }
+        }
+    }
+}

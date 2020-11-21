@@ -14,7 +14,7 @@ body{
 
 .container{
     max-width: 1200px;
-    padding:1rem 2.5rem;
+    padding:1.5rem 2.5rem;
     margin:auto;
     overflow: hidden;
 }
@@ -63,13 +63,14 @@ a{
 
     h1{
         font-size: 2.1rem;
+        font-weight:400;
         margin-bottom: 0.5rem;
     }
 
     .btm-line{
         height:2px;
         width:10rem;
-        margin-bottom: 2rem;
+        margin-bottom:1rem;
         background: $main-color;
     }
 
@@ -83,3 +84,59 @@ h1{
     font-weight: 300;
 }
 
+@media(max-width:1075px){
+    
+    .center{
+
+        h1{
+            font-size:2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .btm-line{
+            margin-bottom:0.75rem;
+        }
+    
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media(max-width:875px){
+
+    .btn{
+        font-size: 1rem;
+        padding:0.3rem 1.2rem;
+    }
+
+    .center{
+
+        h1{
+            font-weight: 300;
+        }
+    }
+}
+
+@media(max-width:750px){
+
+    .center{
+
+        h1{
+            font-size:1.7rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .center{
+        
+       h1{
+           font-size: 1.65rem;
+       } 
+    }
+}

@@ -2,6 +2,10 @@
 
 #sign-in{
 
+    .center{
+        margin-bottom:1rem;
+    }
+
     .login{
         display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;
@@ -54,3 +58,45 @@
         }
     }
 }
+
+@media(max-width:875px){
+    #sign-in{
+
+        .login{
+            grid-template-columns: 1fr 2.5fr 1fr;
+        }
+    }
+}
+
+@media(max-width:750px){
+    #sign-in{
+
+        .login{
+            grid-template-columns: 1fr 3.5fr 1fr;
+        }
+    }
+}
+
+@media(max-width:675px){
+    #sign-in{
+
+        .center{
+           
+            h1{
+                font-size:1.55rem;
+            }
+        }
+
+        .login{
+            grid-template-columns: 0fr 1fr 0fr;
+
+            .form{
+    
+                label{
+                    font-size: 1.05rem;
+                }
+            }
+        }
+    }
+}
+
